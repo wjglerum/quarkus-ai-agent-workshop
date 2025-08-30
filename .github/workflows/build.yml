@@ -23,7 +23,7 @@ jobs:
           - step-02-chatbot
     name: Build ${{ matrix.step }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
