@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build ${{ matrix.step }}
+    strategy:
+      fail-fast: false
+      matrix:
+        step:
+          - step-01-introduction
+          - step-02-chatbot
+          - step-03-authentication
+          - step-04-tools
+          - step-05-mcp-server
+          - step-06-guardrails
+          - weather-mcp-server
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          sparse-checkout: '${{ matrix.step }}'
+      - name: Setup Java
+        uses: actions/setup-java@v5
+        with:
+          java-version: 21
+          distribution: temurin
+          cache: maven
+      - name: Maven build
+        working-directory: ${{ matrix.step }}
+        run: ./mvnw -B verify
