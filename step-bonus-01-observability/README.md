@@ -1,6 +1,6 @@
-# Bonus 1 - Monitoring
+# Bonus 1 - Observability
 
-Every application should have proper monitoring and logging.
+Every application should have proper monitoring and logging for observability.
 You especially want to know how your language model behaves.
 Follow the [guide](https://docs.quarkiverse.io/quarkus-langchain4j/dev/observability.html) from Quarkus LangChain4j to try it out.
 
