@@ -28,12 +28,12 @@ Make sure you have the following installed locally:
 First clone the repository and run the build:
 
 ```shell
-./mvwn install -DskipTests
+./mvnw install -DskipTests
 ```
 
 ## Enable LLM
 
-To run this workshop you need access to a LLM.
+To run this workshop you need access to an LLM.
 You can either use a local model or one of the other providers that you have access to.
 
 - [Ollama](#ollama)
@@ -75,13 +75,13 @@ ollama run llama3.2
 > Some costs apply, but this workshop should only cost you a few cents/dollars.
 > This is not required for the workshop, but feel free to explore.
 
-You can generate an API key on your [profile](http://platform.openai.com/api-keys).
-This is only possible if you have a payment method setup.
+You can generate an API key on your [profile](https://platform.openai.com/api-keys).
+This is only possible if you have a payment method set up.
 Next you can run the following command to export the API key:
 
 ```shell
 export OPENAI_API_KEY=<YOUR_API_KEY_HERE>
- ``` 
+``` 
 
 > [!WARNING]
 > Make sure to keep the API key secret.
@@ -93,7 +93,7 @@ export OPENAI_API_KEY=<YOUR_API_KEY_HERE>
 If you have a Google account you can also leverage the free tier from Gemini.
 You can generate an API key on your [profile](https://aistudio.google.com/app/apikey).
 No payment method is required.
-Checkout the [documentation](https://ai.google.dev/gemini-api/docs/api-key) for more information.
+Check out the [documentation](https://ai.google.dev/gemini-api/docs/api-key) for more information.
 Next you can run the following command to export the API key:
 
 ```shell
@@ -114,7 +114,7 @@ If you get stuck, you can always check out the solution in the next part.
 - [Step 3 - Authentication](./step-03-authentication/README.md)
 - [Step 4 - Tools](./step-04-tools/README.md)
 - [Step 5 - MCP Server](./step-05-mcp-server/README.md)
-- [Step 5 - Guardrails](./step-06-guardrails/README.md)
+- [Step 6 - Guardrails](./step-06-guardrails/README.md)
 - [Bonus 1 - Monitoring](step-bonus-01-monitoring/README.md)
 - [Bonus 2 - Hexagonal Architecture](step-bonus-02-hexagonal-architecture/README.md)
 - [Bonus 3 - Your own use case!](step-bonus-03-use-case/README.md)

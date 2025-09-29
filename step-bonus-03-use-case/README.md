@@ -1,7 +1,7 @@
 # Bonus 3 - Your own use case
 
 Think of a use case you would like to implement.
-You can use a LLM to help you!
+You can use an LLM to help you!
 
 For example a personal assistant that can help you with your daily tasks.
 

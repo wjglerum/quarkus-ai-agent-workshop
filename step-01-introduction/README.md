@@ -1,7 +1,7 @@
 # Step 1 - Introduction
 
 This is the first step where we will introduce the project.
-Start by running the following command in this directory
+Start by running the following command in this directory:
 
 ```shell
 # Change directory to this folder
@@ -28,7 +28,7 @@ Open your browser at [http://localhost:8080](http://localhost:8080) and navigate
 From the Dev UI you can explore the application and get a better understanding of how it works:
 
 - Extensions
-- Configration
+- Configuration
 - Dev Services
 - Logs
 - ...
@@ -45,7 +45,7 @@ You can even set the system message to give instructions to the model.
 Try out some different messages and see how the model responds.
 
 > [!NOTE]
-> Notice that the model doesn't really care about typo's or grammatical errors.
+> Notice that the model doesn't really care about typos or grammatical errors.
 >
 
 ![dev-ui-langchain4j-chat.png](./../docs/images/dev-ui-langchain4j-chat.png)

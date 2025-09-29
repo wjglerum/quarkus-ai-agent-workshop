@@ -19,7 +19,7 @@ It only has one method that accepts a user message and returns a response.
 
 We use `@SessionScoped` to make sure the service is only created once per session to have a dedicated chat per session.
 
-Next, checkout the code in the `ChatBotWebSocket` class how to connect to the chatbot to a websocket.
+Next, check out the code in the `ChatBotWebSocket` class how to connect to the chatbot to a websocket.
 Here you can personalize the welcome message.
 
 ```java
@@ -92,7 +92,7 @@ for more information about the available parameters.
 The temperature of the model controls how creative the bot is.
 
 ```properties
-# Configure temperate for all models
+# Configure temperature for all models
 quarkus.langchain4j.temperature=0.5
 ```
 
@@ -123,7 +123,7 @@ quarkus.langchain4j.openai.chat-model.max-tokens=1000
 
 ## System message
 
-Checkout the full specification of
+Check out the full specification of
 the [AI Services](https://docs.quarkiverse.io/quarkus-langchain4j/dev/ai-services.html#_annotations_reference)
 in the LangChain4j documentation.
 And try to get creative with the system message.

@@ -1,17 +1,17 @@
 # Step 5 - MCP Server
 
-Now that we now how we can use external tools we can now move on to MCP servers.
+Now that we know how we can use external tools we can now move on to MCP servers.
 MCP servers are a way to create a tool that any language model can use.
 For enterprise usage we can imagine setting up a dedicated MCP server for an external tool.
 
-For the above use case we would alos need authentication and authorization. This was initially not specified by the
+For the above use case we would also need authentication and authorization. This was initially not specified by the
 specification but in Quarkus it's straightforward to implement.
 
-Fore more information on MCP see the [documentation](https://modelcontextprotocol.io/docs/getting-started/intro).
+For more information on MCP see the [documentation](https://modelcontextprotocol.io/docs/getting-started/intro).
 
 ## Weather tool
 
-Now that we now our location we can use it to get the weather forecast for our location.
+Now that we know our location we can use it to get the weather forecast for our location.
 Instead of creating a tool directly we are going to create an MCP server.
 
 ### Quarkus project
@@ -41,9 +41,10 @@ Now you can start the MCP server:
 
 ### Weather client
 
-Create another rest client to get the weather forecast.
+Create another REST client to get the weather forecast.
 
 ```java
+
 
 @Path("/v1")
 @RegisterRestClient(baseUri = "https://api.open-meteo.com")
@@ -78,7 +79,7 @@ public class WeatherMcpServer {
 
 Here we inject the weather client and use it to get the weather forecast.
 Next we register the tool for the MCP server with the `@Tool` annotation.
-Give it a good name and description so other languages can use it.
+Give it a good name and description so other language models can use it.
 
 ### Logging
 
@@ -101,7 +102,7 @@ Now you can use the MCP Inspector to test the weather tool.
 
 ### Authentication
 
-We now created a MCP server that can be used by other languages.
+We have now created an MCP server that can be used by other languages.
 But we need to make sure that only authorized users can use it.
 
 ```properties
@@ -172,7 +173,7 @@ import io.quarkiverse.langchain4j.mcp.runtime.McpToolBox;
 
 ### MCP Client with authentication
 
-Next we also need another extensions to automatically propagate the acces token to the MCP server:
+Next we also need another extension to automatically propagate the access token to the MCP server:
 
 ```xml
 
@@ -185,7 +186,7 @@ Next we also need another extensions to automatically propagate the acces token 
 This extension provides an instance of the `McpClientAuthProvider`,
 see https://docs.quarkiverse.io/quarkus-langchain4j/dev/mcp.html#_authorization
 
-You should also disable the OIDC devservices so it we use the shared Keycloak devservices for both application:
+You should also disable the OIDC devservices so that we use the shared Keycloak devservices for both application:
 
 ```java
 quarkus.oidc.devservices.enabled=false

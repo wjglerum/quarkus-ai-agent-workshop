@@ -13,7 +13,7 @@ https://docs.quarkiverse.io/quarkus-langchain4j/dev/function-calling.html
 
 ### Location tool
 
-We are going to let the chatbot figure out were we are.
+We are going to let the chatbot figure out where we are.
 And ask for recommendations based on our location.
 First we need an external system that we can call.
 We will use an endpoint that returns our current public IP address and location.
@@ -36,7 +36,7 @@ public interface IPLookupClient {
 ```
 
 The `@RegisterRestClient` annotation tells Quarkus to generate a REST client for us.
-It doesn't need any arguments so we can just create a get method.
+It doesn't need any arguments so we can just create a GET method.
 
 Next, we should annotate the method with `@Tool` to tell LangChain that it should be used as a tool.
 Give it a good description so that the model can learn what it does.
@@ -57,7 +57,7 @@ public interface ChatBot {
 This is all it takes to connect to an external system!
 Quarkus takes care of the rest.
 
-> [!Note]
+> [!NOTE]
 > This naively gets the location from the IP address of the server and not the client.
 > For demo purposes this is fine.
 
@@ -88,7 +88,7 @@ Experiment with it and see how it works:
 
 - try making it respond more intelligently or specific
 - restrict its replies to a certain location
-- ..
+- ...
 
 ## Next step
 
