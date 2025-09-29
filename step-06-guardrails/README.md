@@ -1,8 +1,8 @@
-# Step 5 - Guardrails
+# Step 6 - Guardrails
 
-Guardrails are a set of rules that are applied to your large language mode. It can set a set of rules for the input and
+Guardrails are a set of rules that are applied to your large language model. It can define a set of rules for the input and
 output of your model.
-For the full docs checkout the [documentation](https://docs.quarkiverse.io/quarkus-langchain4j/dev/guardrails.html).
+For the full docs check out the [documentation](https://docs.quarkiverse.io/quarkus-langchain4j/dev/guardrails.html).
 
 ![guardrails](https://docs.quarkiverse.io/quarkus-langchain4j/dev/_images/guardrails.png)
 https://docs.quarkiverse.io/quarkus-langchain4j/dev/guardrails.html
@@ -44,7 +44,7 @@ public class MaxLength implements InputGuardrail {
 We can filter the outputs of our model before returning them to the user.
 You can also use output guardrails to process the output of your model.
 
-For example to process it as JSON and next perform validation on the fields:
+For example to process it as JSON and then perform validation on the fields:
 
 ```java
 @ApplicationScoped

@@ -1,7 +1,7 @@
 # Bonus 2 - Hexagonal Architecture
 
-For better and maintainable code you can refactor your code to use Hexagonal Architecture.
-Checkout the resources below for more information and insights.
+For better, more maintainable code you can refactor your code to use Hexagonal Architecture.
+Check out the resources below for more information and insights.
 
 ## References
 

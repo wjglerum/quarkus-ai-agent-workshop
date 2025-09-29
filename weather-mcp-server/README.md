@@ -1,7 +1,7 @@
 # Weather MCP Server
 
-This module showcases how to implement a MCP server with Quarkus.
-We expose the weather forecast as a MCP server.
+This module showcases how to implement an MCP server with Quarkus.
+We expose the weather forecast as an MCP server.
 
 ## References
 

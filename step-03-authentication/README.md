@@ -80,7 +80,7 @@ public String admin() {
 
 ## Authentication
 
-Now you should be promoted with a login page on reload.
+Now you should be prompted with a login page on reload.
 By default, we have the users `alice` and `bob`.
 
 ![login.png](./../docs/images/login.png)
@@ -112,7 +112,7 @@ And use it in the welcome message:
 
 @OnOpen
 public String onOpen() {
-    return "Hi " + identity.getPrincipal().getName() + "Welcome to your personal Quarkus chat bot. What can I do for you?";
+    return "Hi " + identity.getPrincipal().getName() + "! Welcome to your personal Quarkus chat bot. What can I do for you?";
 }
 ```
 
