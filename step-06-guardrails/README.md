@@ -70,4 +70,4 @@ Try this out with the weather forecast client.
 
 ## Next step
 
-Now you are ready to move to the next [step](./../step-bonus-01-monitoring/README.md).
+Now you are ready to move to the next [step](./../step-07-rag/README.md).
