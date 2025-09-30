@@ -1,0 +1,23 @@
+City Guide — Rotterdam
+
+§A Coffee & Quick Bites in Rotterdam
+A.1 Man Met Bril Koffie (coffee) — Agniesebuurt — ~51.927, 4.459 — Roastery café; relaxed mornings.
+A.2 Hopper Coffee (coffee) — Centrum — ~51.922, 4.473 — Good bread + espresso; can fill up at lunch.
+A.3 Giraffe Coffee Roasters (coffee bar) — Delfshaven edge — ~51.914, 4.456 — Compact; quality filter.
+
+§B Lunch in Rotterdam
+B.1 Markthal — Rotterdam Centrum — ~51.920, 4.481 — Many stalls; perfect for mixed groups and bad weather.
+B.2 Fenix Food Factory — Rotterdam Katendrecht — ~51.903, 4.489 — Casual bites by the water.
+B.3 Dudok Rotterdam — Rotterdam Centrum — ~51.922, 4.479 — Classic Dutch bistro; famous for apple pie.
+
+City Guide — Antwerp
+
+§C Coffee & Quick Bites
+C.1 Caffènation (coffee)  — Antwerp Zuid — ~51.208, 4.396 — Specialty espresso; lively mornings.
+C.2 Normo (coffee) — Antwerp Theaterbuurt — ~51.214, 4.417 — Calm vibe; good for short laptop sessions off-peak.
+C.3 Kolonel Koffie (coffee) — Antwerp Zuid — ~51.205, 4.392 — Brunch plates; limited seating weekends.
+
+§C Lunch
+C.1 PAKT Food Courtyard (casual stalls) — Antwerp Groen Kwartier — ~51.202, 4.420 — Indoor/outdoor spots; great in fair weather.
+C.2 Frituur near Groenplaats (quick) — Antwerp Centrum — ~51.219, 4.402 — Classic Belgian fries; takeaway friendly.
+C.3 Le Pain Quotidien (light bites) — Antwerp Meir/Groenplaats area — ~51.218, 4.404 — Fast, predictable, vegetarian options.
