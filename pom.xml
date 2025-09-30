@@ -16,6 +16,7 @@
         <module>step-04-tools</module>
         <module>step-05-mcp-server</module>
         <module>step-06-guardrails</module>
+        <module>step-07-rag</module>
         <module>weather-mcp-server</module>
     </modules>
 </project>

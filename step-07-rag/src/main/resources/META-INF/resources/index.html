@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quarkus ChatBot</title>
+    <script src="/_importmap/generated_importmap.js"></script>
+    <script type="module">
+        import 'wc-chatbot';
+    </script>
+    <style>
+        :root {
+            --main-bg-color: rgb(246, 242, 242);
+            --main-text-color: rgb(98, 121, 237);
+        }
+
+        .header {
+            font-size: 50px;
+            font-weight: 900;
+            color: var(--main-text-color);
+            text-align: center;
+            padding: 1em;
+            background: var(--main-bg-color);
+        }
+
+        .body {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: justify;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Quarkus ChatBot</h1>
+</div>
+<div class="body">
+    <p>Click the yellow chatbot icon to chat with your bot!</p>
+    <p>Follow the instructions of the workshop in the README.md</p>
+</div>
+<div class="footer">
+    <chat-bot></chat-bot>
+</div>
+
+<script>
+    const chatBot = document.getElementsByTagName("chat-bot")[0];
+    const socket = new WebSocket("ws://" + window.location.host + "/chat-bot");
+
+    socket.onmessage = function (event) {
+        chatBot.hideAllLoading();
+        chatBot.sendMessage(event.data, {right: false});
+    }
+
+    chatBot.addEventListener("sent", function (e) {
+        if (e.detail.message.right === true) {
+            // User message
+            socket.send(e.detail.message.message);
+            chatBot.sendMessage("", {
+                right: false,
+                loading: true
+            });
+        }
+    });
+</script>
+</body>
+</html>

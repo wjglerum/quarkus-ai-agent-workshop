@@ -10,7 +10,7 @@ public class WeatherMcpServer {
     @RestClient
     WeatherClientInternal weatherClient;
 
-    @Tool(name = "Current weather", description = "Get current weather forecast for a location.")
+    @Tool(name = "current_weather", description = "Get current weather forecast for a location.")
     ToolResponse forecast(String latitude, String longitude) {
         String forecast = weatherClient.forecast(latitude, longitude);
         return ToolResponse.success(new TextContent(forecast));
