@@ -88,8 +88,8 @@ export OPENAI_API_KEY=<YOUR_API_KEY_HERE>
 > You are responsible for the costs yourself.
 > You can disable auto recharge to avoid surcharges.
 
-
 ### Gemini
+
 If you have a Google account you can also leverage the free tier from Gemini.
 You can generate an API key on your [profile](https://aistudio.google.com/app/apikey).
 No payment method is required.
@@ -115,6 +115,7 @@ If you get stuck, you can always check out the solution in the next part.
 - [Step 4 - Tools](./step-04-tools/README.md)
 - [Step 5 - MCP Server](./step-05-mcp-server/README.md)
 - [Step 6 - Guardrails](./step-06-guardrails/README.md)
+- [Step 7 - RAG](./step-07-rag/README.md)
 - [Bonus 1 - Observability](step-bonus-01-observability/README.md)
 - [Bonus 2 - Hexagonal Architecture](step-bonus-02-hexagonal-architecture/README.md)
 - [Bonus 3 - Your own use case!](step-bonus-03-use-case/README.md)
