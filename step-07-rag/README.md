@@ -109,7 +109,7 @@ Boot up the app:
 
 Here is an example of how a model replut might look like:
 
-![img.png](img.png)
+![img.png](file-uploads/img.png)
 
 Notice, that the model contains the relevant context from the guide and cites it. This answer was generated with OpenAI's `gpt-4o` model.
 Unfortunately, smaller models are not great at following such instructions, especially when the input prompt becomes longer,
