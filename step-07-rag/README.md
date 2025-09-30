@@ -13,12 +13,6 @@ In this step, we’ll implement:
 1. **Ingestion** – split the doc, embed its content, store the content.
 2. **Augmentation** – retrieve relevant chunks and inject them into the prompt.
 
-[//]: # (Pick one track &#40;don’t run both at the same time&#41;:)
-
-[//]: # (- **7A. EasyRAG &#40;zero code, fastest&#41;**)
-
-[//]: # (- **7B. Minimal DIY RAG &#40;in-memory, no DB, shows the moving parts&#41;**)
-
 ---
 
 ## EasyRAG
@@ -132,65 +126,6 @@ which is the case with RAG.
 > [!NOTE] Model choice will affect the quality of the answers. If you use a small model (e.g., `llama3.2`), the bot may
 > not be able to answer all questions correctly. For better results, consider using a more capable model like `gpt-4o`
 > from OpenAI.
-
-[//]: # (---)
-
-[//]: # ()
-
-[//]: # (## 7B — Minimal DIY RAG &#40;in-memory, no DB&#41;)
-
-[//]: # (This track shopws the essential RAG components without a vector database.)
-
-[//]: # ()
-
-[//]: # (> [!IMPORTANT] **Do not enable EasyRAG at the same time** &#40;comment the EasyRAG dependency if you switch to 7B&#41;.)
-
-[//]: # ()
-
-[//]: # (### 1&#41; Dependency &#40;local embedding model&#41;)
-
-[//]: # (Similar to 7A, we’ll use the small ONNX BGE model that runs locally. Add a dependency for the model to `pom.xml`:)
-
-[//]: # (```xmlxml)
-
-[//]: # (<dependency>)
-
-[//]: # (  <groupId>dev.langchain4j</groupId>)
-
-[//]: # (  <artifactId>langchain4j-embeddings-bge-small-en-q</artifactId>)
-
-[//]: # (</dependency>)
-
-[//]: # (```)
-
-[//]: # ()
-
-[//]: # (### 2&#41; Configurations)
-
-[//]: # ()
-
-[//]: # (We need to indicate where our docs live and ensure the same embedding model is used for ingestion & retrieval.)
-
-[//]: # (In `src/main/resources/application.properties`,)
-
-[//]: # (```properties)
-
-[//]: # (# Where your docs live)
-
-[//]: # (rag.location=src/main/resources/rag)
-
-[//]: # ()
-
-[//]: # (# Ensure the same embedding model is used for ingestion & retrieval)
-
-[//]: # (quarkus.langchain4j.embedding-model.provider=dev.langchain4j.model.embedding.onnx.bgesmallenq.BgeSmallEnQuantizedEmbeddingModel)
-
-[//]: # (```)
-
-[//]: # ()
-
-[//]: # (## 3&#41; In-Memory embedding store)
-
 
 
 > [!NOTE]
