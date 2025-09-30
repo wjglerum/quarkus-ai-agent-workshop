@@ -69,7 +69,7 @@ public class WeatherMcpServer {
     @RestClient
     WeatherClient weatherClient;
 
-    @Tool(name = "Current weather", description = "Get current weather forecast for a location.")
+    @Tool(name = "current_weather", description = "Get current weather forecast for a location.")
     ToolResponse forecast(String latitude, String longitude) {
         String forecast = weatherClient.forecast(latitude, longitude, "temperature_2m,wind_speed_10m,precipitation");
         return ToolResponse.success(new TextContent(forecast));
@@ -102,7 +102,7 @@ Now you can use the MCP Inspector to test the weather tool.
 
 ### Authentication
 
-We have now created an MCP server that can be used by other languages.
+We have now created an MCP server that can be used by other language models.
 But we need to make sure that only authorized users can use it.
 
 ```properties
