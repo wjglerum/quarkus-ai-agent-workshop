@@ -25,8 +25,9 @@ jobs:
           - step-03-authentication
           - step-04-tools
           - step-05-mcp-server
-          - step-06-guardrails
-          - step-07-rag
+          - step-06-rag
+          - step-07-guardrails
+          - step-08-testing
           - weather-mcp-server
     steps:
       - name: Checkout repository
