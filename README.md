@@ -1,9 +1,18 @@
 # Building secure AI agents with Quarkus LangChain4j
 
-In this workshop we will build a simple AI agent with Quarkus and LangChain4j.
+In this workshop we will build a simple **secure AI agent** with Quarkus and LangChain4j.
 Next, we will explore how to securely integrate it into an application and enable monitoring and logging for production.
-The workshop is divided into multiple parts, you can start with the first part and build your way through the workshop.
-If you get stuck, you can always check out the solution in the next part.
+The workshop is divided into multiple parts, you can start with the first part and build your way through the workshop:
+
+- **Chatbot & Tools** (WebSocket UI, REST clients, function-calling)
+- **MCP (Model Context Protocol)** integration
+- **RAG (Retrieval-Augmented Generation)** over your own docs
+- **Guardrails** (input/output validation)
+- **Testing** (fast, deterministic guardrail tests; optional scoring)
+- **Observability** for production
+
+Each step is self-contained. If you get stuck, you can always check out the solution in the next part.
+
 
 ## Prerequisites
 
