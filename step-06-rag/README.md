@@ -37,6 +37,10 @@ great for demos and workshops.
 > `./mvnw quarkus:add-extension -Dextension=easy-rag`
 
 ### 2) Add a local embedding model (to avoid remote calls)
+> [!WARNING]
+> If you are using an Intel Mac, you might encounter an error when using the BGE model.
+> In that case, check out this [issue thread](https://github.com/langchain4j/langchain4j/issues/2144).
+> You might need to downgrade the LangChain4j version.
 
 We’ll use the small ONNX BGE model that runs locally. Add a dependency for the model to `pom.xml`:
 
@@ -81,7 +85,7 @@ INFO  [io.qua.lan.eas.run.EasyRagIngestor] (Quarkus Main Thread) Ingested 1 file
 
 ### 3) Drop a doc
 
-Create `src/main/resources/rag/workshop-field-guide.txt`. (A sample file has been provided in the repo.)
+Create `src/main/resources/rag/city-guide.txt`. (A sample file has been provided in the repo.)
 
 We will keep it small for the workshop purposes.
 EasyRAG supports many formats, see [docs](https://quarkiverse.github.io/quarkus-langchain4j/dev/easy-rag/).
@@ -89,13 +93,13 @@ These are most commonly used formats that are supported: `.txt`, `.md`, `.pdf`, 
 
 ### 4) Update bot system message
 
-To make the bot more aware, let's add "You use provided information to you about city guides." to the system message.
+To make the bot more aware, let's add "You use provided information to you about Antwerp and Rotterdam." to the system message.
 
 ```
 @SystemMessage("""
                 You are a helpful bot that helps users with recommendations about their location.
                 You can get their location and extract the latitude and longitude.
-                You use provided information to you about city guides.
+                You use provided information to you about Antwerp and Rotterdam.
             """)
 ```
 
