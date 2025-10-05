@@ -63,11 +63,15 @@ Furthermore, we need some web UI to interact with the chatbot. Add the following
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-web-dependency-locator</artifactId>
 </dependency>
+```
+
+```xml
+
 <dependency>
-<groupId>org.mvnpm</groupId>
-<artifactId>wc-chatbot</artifactId>
-<version>0.2.1</version>
-<scope>runtime</scope>
+    <groupId>org.mvnpm</groupId>
+    <artifactId>wc-chatbot</artifactId>
+    <version>0.2.1</version>
+    <scope>runtime</scope>
 </dependency>
 ```
 

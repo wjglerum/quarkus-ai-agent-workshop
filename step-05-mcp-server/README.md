@@ -7,7 +7,7 @@ For enterprise usage we can imagine setting up a dedicated MCP server for an ext
 For the above use case we would also need authentication and authorization. This was initially not specified by the
 specification but in Quarkus it's straightforward to implement.
 
-For more information on MCP see the [documentation](https://modelcontextprotocol.io/docs/getting-started/intro).
+For more information on MCP see the [documentation](https://modelcontextprotocol.io/docs/getting-started/intro) and the [Quarkus MCP Server extension](https://docs.quarkiverse.io/quarkus-mcp-server/dev/index.html).
 
 ## Weather tool
 
@@ -120,6 +120,8 @@ You can use the access token to test the MCP server endpoint - your Weather tool
 1. Go to Quarkus Dev UI > _Extensions_ > _Tools_ > _Call_
 2. Call the endpoint by passing the access token and some input (latitude and longitude):
 
+See https://docs.quarkiverse.io/quarkus-mcp-server/dev/index.html#_development_mode
+
 ![img.png](../docs/images/mcp-server-endpoint.png)
 
 ### Token propagation
@@ -191,4 +193,4 @@ Try asking it about the weather in your location.
 
 ## Next step
 
-Now you are ready to move to the next [step](./../step-06-guardrails/README.md).
+Now you are ready to move to the next [step](./../step-06-rag/README.md).

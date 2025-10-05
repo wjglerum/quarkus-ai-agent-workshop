@@ -8,8 +8,10 @@ the [official documentation](https://quarkus.io/guides/security-openid-connect) 
 - [OIDC Bearer Token Authentication](https://quarkus.io/guides/security-oidc-bearer-token-authentication)
 - [OIDC Code Flow Authentication](https://quarkus.io/guides/security-oidc-code-flow-authentication)
 
-![token-flow](https://www.cncf.io/wp-content/uploads/2023/05/image-20.png)
-https://www.cncf.io/blog/2023/05/17/securing-cloud-native-microservices-with-role-based-access-control-using-keycloak/
+## OIDC Authorization Code Flow
+
+![token-flow](https://quarkus.io/guides/images/authorization_code_flow.png)
+https://quarkus.io/guides/security-oidc-code-flow-authentication
 
 ## OIDC Extension
 
