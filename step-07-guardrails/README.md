@@ -31,6 +31,13 @@ What can go wrong? Follow the documentation to set the guardrails.
 For example to limit the input to 1000 characters:
 
 ```java
+package org.acme.guardrails;
+
+import dev.langchain4j.data.message.UserMessage;
+import dev.langchain4j.guardrail.InputGuardrail;
+import dev.langchain4j.guardrail.InputGuardrailResult;
+import jakarta.enterprise.context.ApplicationScoped;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 @ApplicationScoped
 public class MaxLength implements InputGuardrail {
@@ -103,7 +110,21 @@ You can also use output guardrails to process the output of your model.
 Similarly to the input guardrail, let's create a new class `AllowedLocationsGuardrail` in the `org.acme.guardrails` package.
 This guardrail will process output and ensure our chatbot refers to our City Guide from the previous step.
 
+Here is the list of lication from the City Guide that we want to allow:
+
+```
+guardrails.locations.allowed=Markthal,Fenix Food Factory,Dudok,Man Met Bril Koffie,Hopper Coffee,Giraffe Coffee Roasters,Caffenation,Normo,Kolonel Koffie,PAKT Food Courtyard,Frituur near Groenplaats,Le Pain Quotidien
+```
+
 ```java
+package org.acme.guardrails;
+
+import dev.langchain4j.data.message.AiMessage;
+import dev.langchain4j.guardrail.OutputGuardrail;
+import dev.langchain4j.guardrail.OutputGuardrailResult;
+import jakarta.enterprise.context.ApplicationScoped;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+
 @ApplicationScoped
 public class AllowedLocationsGuardrail implements OutputGuardrail {
 

@@ -4,6 +4,7 @@ In this step you’ll unit test your input/output guardrails using the `langchai
 These tests run in milliseconds and don’t call an LLM, which is perfect for CI.
 
 ## 0) Add Dependencies
+
 First, we need to add the following dependencies to our `pom.xml`:
 
 ```xml
@@ -23,6 +24,7 @@ First, we need to add the following dependencies to our `pom.xml`:
 Both are tiny and deterministic, so we can test them like any other function.
 
 ## 2) Output guardrail test (example)
+
 Files under test
 
 - `AllowedLocationsGuardrail.java`
@@ -37,6 +39,7 @@ Test file — `src/test/java/org/acme/guardrails/AllowedLocationsGuardrailTest.j
 ## 3) Input guardrail test (example)
 
 Files under test
+
 - `MaxLength.java`
 - Config key: `guardrails.max-input-chars` (default 1000)
 
@@ -46,47 +49,44 @@ Test file — `src/test/java/org/acme/guardrails/MaxLengthTest.java`
 > If your failure message differs, either update the guardrail message or loosen the assertion (e.g., .contains(...)).
 
 ## 4) GuardrailAssertions: handy methods
+
 Static-import this in tests:
+
 ```java
 import static dev.langchain4j.test.guardrail.GuardrailAssertions.assertThat;
 ```
 
 Common checks you can use:
+
 - `assertThat(result).isSuccessful();`
 - `assertThat(result).isReprompt();`
 - `assertThat(result).hasResult(Result.FATAL);`
 - `assertThat(result).hasSingleFailureWithMessage("...");`
 - `assertThat(result).hasSingleFailureWithMessageAndReprompt("msg", "instruction");`
 - `assertThat(result).hasRepromptInstructionContaining("...");`
-- `assertThat(result).assertSingleFailureSatisfies(f -> { ... assertions on f.message(), f.repromptInstruction() ... });`
+-
+`assertThat(result).assertSingleFailureSatisfies(f -> { ... assertions on f.message(), f.repromptInstruction() ... });`
 
 These work for both **input** and **output** guardrail results.
 
-
 ## 5) Patterns for your own tests
+
 - Arrange: instantiate your guardrail and override config fields (e.g., `rail.allowedCsv = "..."`).
 - Act: call `validate(...)` with a `UserMessage` (input rails) or `AiMessage` (output rails).
 - Assert: use `GuardrailAssertions` to check outcome (SUCCESS/REPROMPT/FATAL), message, and reprompt instruction.
 
-
 ## Bonus
-If you want to explore testing in more depth, check out Quarkus LangChain4j Testing Scorer Strategy Semantic Similarity.
+
+If you want to explore testing in more depth, check out Quarkus
+LangChain4j [Testing Scorer Strategy Semantic Similarity](https://docs.quarkiverse.io/quarkus-langchain4j/dev/testing.html).
 Semantic similarity is a way to compare the meaning of two pieces of text, rather than just their exact words.
 Applications include:
+
 - Evaluating the quality of generated text by comparing it to a reference text.
 - Clustering similar documents or responses.
 - Detecting paraphrases or similar questions.
 - Improving search results by finding semantically similar documents.
 - Many more...
-
-```pom.xml
-<dependency>
-  <groupId>io.quarkiverse.langchain4j</groupId>
-  <artifactId>quarkus-langchain4j-testing-scorer-semantic-similarity</artifactId>
-  <scope>test</scope>
-</dependency>
-```
-
 
 ## Next step
 

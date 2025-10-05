@@ -11,29 +11,29 @@ For more information on MCP see the [documentation](https://modelcontextprotocol
 
 ## Weather tool
 
-Now that we know our location we can use it to get the weather forecast for our location.
+Now that we know our location we can use it to get the weather forecast.
 Instead of creating a tool directly we are going to create an MCP server.
 
 ### Quarkus project
 
-Start by creating a new Quarkus project.
+1. Start by creating a new Quarkus project.
 Navigate to https://code.quarkus.io/ and create a new project.
-Enable the following extensions:
+2. Enable the following extensions (while creating the project):
 
 - `quarkus-rest-client`
 - `quarkus-mcp-server-sse`
 - `quarkus-oidc`
 - `quarkus-rest-client-oidc-token-propagation`
 
-Download the project, unzip it and open it in your favorite IDE.
+3. Download the project, unzip it and open it in your favorite IDE.
 
-You should set the http port to a dedicated port to avoid conflicts with the other app:
+4. You should set the http port to a dedicated port to avoid conflicts with the other app:
 
 ```properties
 quarkus.http.port=8081
 ```
 
-Now you can start the MCP server:
+5. Now you can start the MCP server:
 
 ```shell
 ./mvnw quarkus:dev
@@ -93,13 +93,6 @@ quarkus.mcp.server.traffic-logging.text-limit=1000
 quarkus.rest-client.logging.scope=request-response
 ```
 
-### MCP Inspector
-
-Now you can use the MCP Inspector to test the weather tool.
-
-- [Dev UI](https://docs.quarkiverse.io/quarkus-mcp-server/dev/#_dev_ui)
-- [MCP Inspector](https://docs.quarkiverse.io/quarkus-mcp-server/dev/#mcp_inspector)
-
 ### Authentication
 
 We have now created an MCP server that can be used by other language models.
@@ -123,9 +116,11 @@ http://localhost:8081/q/dev-ui/quarkus-oidc/keycloak-provider
 
 Sign in with either `alice:alice` or `bob:bob` and copy the access token.
 
-Finally, you can use the access token to access the MCP server:
+You can use the access token to test the MCP server endpoint - your Weather tool!
+1. Go to Quarkus Dev UI > _Extensions_ > _Tools_ > _Call_
+2. Call the endpoint by passing the access token and some input (latitude and longitude):
 
-![mcp-inspector.png](./../docs/images/mcp-inspector.png)
+![img.png](../docs/images/mcp-server-endpoint.png)
 
 ### Token propagation
 
