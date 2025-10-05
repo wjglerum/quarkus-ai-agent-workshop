@@ -181,12 +181,6 @@ Next we also need another extension to automatically propagate the access token 
 This extension provides an instance of the `McpClientAuthProvider`,
 see https://docs.quarkiverse.io/quarkus-langchain4j/dev/mcp.html#_authorization
 
-You should also disable the OIDC devservices so that we use the shared Keycloak devservices for both application:
-
-```java
-quarkus.oidc.devservices.enabled=false
-```
-
 ### Run the AI agent
 
 Finally, you can run the AI agent and use the `weather` tool.

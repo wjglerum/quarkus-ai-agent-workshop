@@ -36,7 +36,7 @@ This also enables the `OpenID Connect` card on the Dev UI which you can explore.
 > quarkus.oidc.devservices.enabled=true
 > ```
 >
-> We will use that as the default for now.
+> For this workshop we later do need a running Keycloak instance, so make sure to remove this config.
 
 For now, we keep the application simple and use the web app type with the code flow authentication as we don't have a
 dedicated single page app for the frontend.
@@ -85,14 +85,8 @@ By default, we have the users `alice` and `bob`.
 
 ![login.png](./../docs/images/login.png)
 
-You can configure the users in the `application.properties` file:
-
-```properties
-%dev.quarkus.keycloak.devservices.users.duke=dukePassword
-%dev.quarkus.keycloak.devservices.roles.duke=reader
-%dev.quarkus.keycloak.devservices.users.john=johnPassword
-%dev.quarkus.keycloak.devservices.roles.john=reader,writer
-```
+If you want you can configure the users in the `application.properties` file, see
+the [docs](https://quarkus.io/guides/security-openid-connect-dev-services#keycloak-initialization).
 
 ## Personalised welcome message
 
