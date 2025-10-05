@@ -13,17 +13,16 @@ The workshop is divided into multiple parts, you can start with the first part a
 
 Each step is self-contained. If you get stuck, you can always check out the solution in the next part.
 
-
 ## Prerequisites
 
 Make sure you have the following installed locally:
 
 - [JDK 21+](https://adoptium.net/) (you can leverage [SDKMAN!](https://sdkman.io))
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/) (or use [VS Code](https://code.visualstudio.com/) with the Java &
-  Quarkus extension)
-- [Podman Desktop](https://podman-desktop.io) (or use [Docker Desktop](https://www.docker.com/products/docker-desktop/))
-- [Ollama](https://ollama.com) (optional and check [OpenAI compatibility](https://ollama.com/blog/openai-compatibility))
-- [Quarkus CLI](https://quarkus.io/guides/cli-tooling) (optional)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [VS Code](https://code.visualstudio.com/) with the Java &
+  Quarkus extension enabled
+- [Podman Desktop](https://podman-desktop.io) or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Ollama](https://ollama.com)
+- [Quarkus CLI](https://quarkus.io/guides/cli-tooling)
 
 ### Setup
 
@@ -112,9 +111,13 @@ export GEMINI_API_KEY=<YOUR_API_KEY_HERE>
 ## Getting started
 
 Finally, you can open the project in IntelliJ IDEA and start coding!
-Navigate to [Step 1 - Introduction](./step-01-introduction/README.md) to get started.
-You will build up the application step by step.
-If you get stuck, you can always check out the solution in the next part.
+
+> [!NOTE]
+> Navigate to [Step 1 - Introduction](./step-01-introduction/README.md) to get started.
+> 
+> You will build up the application step by step in this directory.
+> 
+> If you get stuck, you can always check out the solution in the next part.
 
 ### Assignments
 
