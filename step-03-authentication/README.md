@@ -71,12 +71,12 @@ public class ChatBotWebSocket {
 Furthermore, we can also use the `@RolesAllowed` annotation to restrict access to certain endpoints based on roles.
 
 ```java
+import jakarta.annotation.security.RolesAllowed;
 
-@GET
-@RolesAllowed("admin")
-@Path("/admin")
-public String admin() {
-    return "Admin only";
+@RolesAllowed("user")
+@WebSocket(path = "/chat-bot")
+public class ChatBotWebSocket {
+    ...
 }
 ```
 
