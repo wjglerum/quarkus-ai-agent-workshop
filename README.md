@@ -22,7 +22,7 @@ Make sure you have the following installed locally:
   Quarkus extension enabled
 - [Podman Desktop](https://podman-desktop.io) or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Ollama](https://ollama.com)
-- [Quarkus CLI](https://quarkus.io/guides/cli-tooling)
+- [Quarkus CLI](https://quarkus.io/guides/cli-tooling) (optional)
 
 ### Setup
 
