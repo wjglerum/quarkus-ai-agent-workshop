@@ -78,6 +78,9 @@ Furthermore, we need some web UI to interact with the chatbot. Add the following
 Finally, copy over the `index.html` file from
 the [step-02-chatbot/src/main/resources/META-INF/resources](src/main/resources/META-INF/resources) folder.
 
+> [!NOTE]
+> If using IntelliJ make sure to create the directories manually first.
+
 Congratulations, you have built your first chatbot!
 You can interact with the bot by opening your browser and navigate to http://localhost:8080/
 Click on the chatbot icon in the bottom right corner to open the chat window.
