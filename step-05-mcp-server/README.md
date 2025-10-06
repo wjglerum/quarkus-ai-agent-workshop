@@ -7,7 +7,8 @@ For enterprise usage we can imagine setting up a dedicated MCP server for an ext
 For the above use case we would also need authentication and authorization. This was initially not specified by the
 specification but in Quarkus it's straightforward to implement.
 
-For more information on MCP see the [documentation](https://modelcontextprotocol.io/docs/getting-started/intro) and the [Quarkus MCP Server extension](https://docs.quarkiverse.io/quarkus-mcp-server/dev/index.html).
+For more information on MCP see the [documentation](https://modelcontextprotocol.io/docs/getting-started/intro) and
+the [Quarkus MCP Server extension](https://docs.quarkiverse.io/quarkus-mcp-server/dev/index.html).
 
 ## Weather tool
 
@@ -17,13 +18,13 @@ Instead of creating a tool directly we are going to create an MCP server.
 ### Quarkus project
 
 1. Start by creating a new Quarkus project.
-Navigate to https://code.quarkus.io/ and create a new project.
+   Navigate to https://code.quarkus.io/ and create a new project.
 2. Enable the following extensions (while creating the project):
 
-- `quarkus-rest-client`
-- `quarkus-mcp-server-sse`
-- `quarkus-oidc`
-- `quarkus-rest-client-oidc-token-propagation`
+    - `quarkus-rest-client`
+    - `quarkus-rest-client-oidc-token-propagation`
+    - `quarkus-oidc`
+    - `quarkus-mcp-server-sse`
 
 3. Download the project, unzip it and open it in your favorite IDE.
 
@@ -44,8 +45,6 @@ quarkus.http.port=8081
 Create another REST client to get the weather forecast.
 
 ```java
-
-
 @Path("/v1")
 @RegisterRestClient(baseUri = "https://api.open-meteo.com")
 public interface WeatherClient {
@@ -117,6 +116,7 @@ http://localhost:8081/q/dev-ui/quarkus-oidc/keycloak-provider
 Sign in with either `alice:alice` or `bob:bob` and copy the access token.
 
 You can use the access token to test the MCP server endpoint - your Weather tool!
+
 1. Go to Quarkus Dev UI > _Extensions_ > _Tools_ > _Call_
 2. Call the endpoint by passing the access token and some input (latitude and longitude):
 
