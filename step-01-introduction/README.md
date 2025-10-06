@@ -189,7 +189,7 @@ To use Gemini with Quarkus you have to add the following dependency to your proj
 And set the following configuration:
 
 ```properties
-quarkus.langchain4j.chat-model.provider=gemini
+quarkus.langchain4j.chat-model.provider=ai-gemini
 quarkus.langchain4j.ai.gemini.api-key=${GEMINI_API_KEY}
 quarkus.langchain4j.ai.gemini.chat-model.model-id=gemini-2.5-flash
 ```
