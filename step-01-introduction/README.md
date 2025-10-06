@@ -111,6 +111,7 @@ The [Quarkus LangChain4j](https://docs.quarkiverse.io/quarkus-langchain4j/dev/in
 in the project.
 You can use it with various providers, here we explain how to use it with OpenAI, Ollama or Gemini.
 Depending on the provider you have to add the corresponding dependency and configuration to your project.
+Choose one of them and configure them accordingly with the instructions below.
 
 ### Quarkus LangChain4j OpenAI
 
@@ -201,3 +202,6 @@ the [documentation](https://docs.quarkiverse.io/quarkus-langchain4j/dev/gemini-c
 
 Feel free to explore the rest of the project, and afterwards continue with the
 next [step](./../step-02-chatbot/README.md).
+
+> [!NOTE]
+> You should stay on working in the current directory, the other steps already contain the full solutions.
