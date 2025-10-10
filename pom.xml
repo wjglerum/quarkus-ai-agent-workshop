@@ -10,6 +10,7 @@
 
     <packaging>pom</packaging>
     <modules>
+        <module>step-00-your-solution</module>
         <module>step-01-introduction</module>
         <module>step-02-chatbot</module>
         <module>step-03-authentication</module>

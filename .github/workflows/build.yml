@@ -20,6 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         step:
+          - step-00-your-solution
           - step-01-introduction
           - step-02-chatbot
           - step-03-authentication

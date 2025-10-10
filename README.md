@@ -110,16 +110,8 @@ export GEMINI_API_KEY=<YOUR_API_KEY_HERE>
 
 ## Getting started
 
-Finally, you can open the project in IntelliJ IDEA and start coding!
-
-> [!NOTE]
-> Navigate to [Step 1 - Introduction](./step-01-introduction/README.md) to get started.
-> 
-> You will build up the application step by step in this directory.
-> 
-> If you get stuck, you can always check out the solution in the next part.
-
-### Assignments
+Before diving in, open the **[Step 0 – Setup](./step-00-your-solution/README.md)** folder.  
+This is your **personal workspace** — all your code for the workshop will live there.
 
 - [Step 1 - Introduction](./step-01-introduction/README.md)
 - [Step 2 - Chatbot](./step-02-chatbot/README.md)
