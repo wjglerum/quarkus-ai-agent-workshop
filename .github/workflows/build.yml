@@ -16,6 +16,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Build ${{ matrix.step }}
+    permissions:
+      contents: read
     strategy:
       fail-fast: false
       matrix:
