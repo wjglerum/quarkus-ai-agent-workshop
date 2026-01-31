@@ -17,7 +17,7 @@ Each step is self-contained. If you get stuck, you can always check out the solu
 
 Make sure you have the following installed locally:
 
-- [JDK 21+](https://adoptium.net/) (you can leverage [SDKMAN!](https://sdkman.io))
+- [JDK 25](https://adoptium.net/) (you can leverage [SDKMAN!](https://sdkman.io))
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [VS Code](https://code.visualstudio.com/) with the Java &
   Quarkus extension enabled
 - [Podman Desktop](https://podman-desktop.io) or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
