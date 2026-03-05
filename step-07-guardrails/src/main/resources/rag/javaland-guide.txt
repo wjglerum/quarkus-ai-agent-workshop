@@ -1,0 +1,75 @@
+JavaLand 2026 Conference Guide — Phantasialand, Brühl, Germany
+
+§A Venue & Logistics
+A.1 JavaLand 2026 takes place at Phantasialand theme park in Brühl, Germany, about 20 minutes by train from Cologne.
+A.2 Conference dates are March 9-12, 2026. Monday March 9 is the Sternfahrt (pre-event gathering) and the Community UnKonferenz.
+A.3 Tuesday March 10 and Wednesday March 11 are the main conference days with talks, keynotes, and community sessions.
+A.4 Thursday March 12 features full-day hands-on workshops. These require separate registration.
+A.5 Brühl is easily accessible from Cologne Hauptbahnhof via regional train (line RB48 or RE5). The Phantasialand entrance is a short walk from Brühl station.
+
+§B Session Rooms
+B.1 Dome — The main stage used for keynotes and high-capacity talks.
+B.2 Bellevue — Architecture & Methodology sessions; a mid-sized room for design and process talks.
+B.3 Sanssouci — Java Language & Community track; great for core Java and ecosystem discussions.
+B.4 Salle Petit Paris — Mixed topics room covering a broad range of subjects.
+B.5 Versailles — Software Engineering track; focused on practices, testing, and craft.
+B.6 CircusCelebration — AI & Testing talks; the go-to room for artificial intelligence and quality topics.
+B.7 Das Studio — DevOps & Tooling sessions; build systems, CI/CD, and developer productivity.
+B.8 Traumpalast — Hands-on workshops and extended coding sessions.
+B.9 Jeanne d'Arc — Extended sessions and deep-dive talks that run longer than the standard slot.
+B.10 Magic Cinema — Security & Advanced topics; cryptography, application security, and advanced JVM features.
+B.11 Hackergarten (Foyer Galerie) — Community coding space where attendees contribute to open-source projects together.
+B.12 Goethe — Home of the legendary Mario Kart tournament.
+B.13 Heinrich Mack — Board games and Magic: The Gathering evenings.
+
+§C Must-See Talks — Tuesday March 10
+C.1 08:30 "Secure AI agents with Quarkus LangChain4j" by Willem Jan Glerum — CircusCelebration — Learn how to build secure AI agents using Quarkus and LangChain4j with guardrails and RAG.
+C.2 08:30 "The road to JUnit 6" by Marc Philipp — Das Studio — The JUnit maintainer shares what is coming in the next major version of the testing framework.
+C.3 10:00 KEYNOTE "AI: It AI-n't What You Think!" by Dr. Venkat Subramaniam — Dome — A keynote exploring common misconceptions about AI and what it really means for developers.
+C.4 11:00 "Scaling Integration Tests" by Marvin Rensing — Versailles — Strategies and patterns for running integration tests at scale in large codebases.
+C.5 12:00 "AI Testing Beyond the Basics" by Mario-Leander Reimer — Dome — Going beyond simple unit tests when building AI-powered applications.
+C.6 12:00 "The Trust Trap - Security von Coding Assistants" by Clemens Hübner — Magic Cinema — Security implications and risks of using AI coding assistants in your workflow.
+C.7 13:00 "Modern Java - Ask Me Anything" by Nicolai Parlog — Sanssouci — An interactive AMA session about modern Java features and where the language is heading.
+C.8 13:00 "The Past, the Present, and the Future of Enterprise Java" by Ivar Grimstad — Dome — A journey through Enterprise Java from J2EE to Jakarta EE and beyond.
+C.9 14:00 "Exploring Structured Concurrency and Scoped Values in Java 25" by Hanno Embregts — Magic Cinema — Deep dive into Project Loom's structured concurrency and scoped values arriving in Java 25.
+C.10 16:00 "Spring AI trifft MCP" by Bernhard Löwenstein, Ionida Löwenstein — Bellevue — How Spring AI integrates with the Model Context Protocol for building AI applications.
+C.11 17:00 "AI-Powered Form Wizards: Chat, Click, Done" by Loïc Magnette — Das Studio — Building intelligent form experiences powered by conversational AI.
+
+§D Must-See Talks — Wednesday March 11
+D.1 09:00 "Observing Project Valhalla" by Prof. Dr. Cay Horstmann — Dome — An in-depth look at value types and Project Valhalla's progress toward the JVM.
+D.2 09:00 "AI-driven reverse engineering" by Martin Toshev — Das Studio — Using AI techniques to reverse-engineer and understand legacy systems.
+D.3 10:00 "Vector Search Made Simple" by Dotan Horovits — Das Studio — Practical introduction to vector search and embeddings for Java developers.
+D.4 11:00 Community Keynote: Live-Awards, Voting & Community — Dome — The beloved community keynote with live awards, audience voting, and celebration of the Java community.
+D.5 12:00 "Bootiful Spring Boot: A DOGumentary" by Josh Long — Dome — Josh Long's entertaining and informative take on the latest in Spring Boot.
+D.6 12:30 "Agentic Coding mit Java" by Frederik Wystup — Traumpalast — Building agentic coding workflows and AI-assisted development tools with Java.
+D.7 13:00 "Local LLMs to Enterprise AI" by Marta Blaszczyk, Marco Klaassen — Dome — The journey from running local language models to deploying enterprise-grade AI solutions.
+D.8 14:00 "The Evolution of Design Patterns in the Age of AI" by Miroslav Wengner — Dome — How classic design patterns are evolving as AI reshapes software architecture.
+D.9 16:00 "From CRUD to Cognitive" by Ed Burns — Dome — Transitioning traditional CRUD applications into cognitive, AI-enhanced systems.
+
+§E Evening Activities
+E.1 Mario Kart Tournament — Tuesday 11:00-21:30 in the Goethe room. Sign up with Stefan Nachtrab! A JavaLand tradition with fierce competition.
+E.2 Magic: The Gathering — Tuesday and Wednesday evenings in Heinrich Mack. Bring your decks or borrow from the community collection.
+E.3 Board Games Night — Tuesday and Wednesday evenings in Heinrich Mack. A wide selection of board games for a relaxed evening.
+E.4 Java macht Musik! — Tuesday 17:30-19:00 in Hackergarten (Foyer Galerie). Live music performed by members of the Java community.
+
+§F Phantasialand Rides (for between sessions!)
+F.1 Taron — Multi-launch coaster through the stunning Klugheim area. Widely regarded as one of the best coasters in Europe.
+F.2 FLY — The world's longest flying coaster. A smooth and immersive ride experience through Rookburgh.
+F.3 Chiapas — Log flume ride featuring one of the steepest drops in the world. You will get wet!
+F.4 Black Mamba — An intense inverted coaster that flies through temple ruins. Smooth but thrilling.
+F.5 Mystery Castle — A drop tower ride full of surprises inside a dark castle. Not for the faint-hearted.
+
+§G Food & Drinks at Phantasialand
+G.1 Rutmors — Themed restaurant located in the Klugheim area near the Taron coaster. Great atmosphere for a sit-down meal.
+G.2 Quick Bites — Various food stalls are scattered throughout the park offering snacks and fast food.
+G.3 Conference Catering — Lunch is provided between sessions near the Dome. Included with your conference ticket.
+G.4 Coffee Stations — Available in all session building lobbies. Essential fuel between talks.
+
+§H Practical Tips
+H.1 WiFi is available in all session rooms. Connect to the JavaLand network for internet access during sessions.
+H.2 The Dev Lounge at the Hackergarten (Foyer Galerie) is a great spot for networking and coding between talks.
+H.3 Don't miss the Community Keynote on Wednesday at 11:00 in the Dome — it features live awards and audience voting.
+H.4 Thursday workshops require separate registration. Check the JavaLand website for availability.
+H.5 Brühl is easily accessible from Cologne Hauptbahnhof, about 20 minutes by regional train.
+H.6 Wear comfortable shoes — you will be walking between theme park areas to reach different session rooms.
+H.7 The JavaLand app has the full schedule with room maps and personal agenda features.
