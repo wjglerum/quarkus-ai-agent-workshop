@@ -34,7 +34,7 @@ jobs:
           - weather-mcp-server
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           sparse-checkout: '${{ matrix.step }}'
       - name: Setup Java
