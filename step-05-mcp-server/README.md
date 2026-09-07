@@ -156,7 +156,7 @@ Go back to the original AI agent project and add the following extension:
 To use it you only need to add the following configuration:
 
 ```properties
-quarkus.langchain4j.mcp.weather.transport-type=http
+quarkus.langchain4j.mcp.weather.transport-type=streamable-http
 quarkus.langchain4j.mcp.weather.url=http://localhost:8081/mcp/sse/
 ```
 
